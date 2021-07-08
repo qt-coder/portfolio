@@ -1,0 +1,55 @@
+.IntroContainer {
+    margin-top: 20vh;
+}
+
+.title {
+    margin-top: 50px;
+    font-size: 8vw;
+    font-size: -webkit-calc(5vw + 50px);
+	font-size: -moz-calc(5vw + 50px);
+	font-size: calc(5vw + 50px);
+    background: -webkit-linear-gradient(#009BEF, #AFF2EA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.flex {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.caption {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.desc {
+    width: 40%;
+    color: gray;
+}
+
+@media screen and (max-width: 940px) {
+
+    .title {
+        font-size: 80px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .desc{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    .title {
+        font-size: 50px;
+    }
+}

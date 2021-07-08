@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+    position: fixed;
+    background-color: #0A0A0A;
+    width: 100%;
+    height: 8%;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navLogo {
+    font-size: large;
+    align-self: center;
+    font-size: medium;
+}
+
+.rightSideNav {
+    justify-content: space-around;
+    gap: 15px;
+    display: flex;
+    justify-self: flex-end;
+}
+
+.navItem {
+    color: gray;
+    list-style-type: none;
+}

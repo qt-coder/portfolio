@@ -1,0 +1,51 @@
+.projectsContainer {
+    padding-top: 10vw;
+}
+
+.projectsTitle {
+    font-size: -webkit-calc(2vw + 20px);
+	font-size: -moz-calc(2vw + 20px);
+	font-size: calc(2vw + 20px);
+    margin-bottom: 5vw;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.project {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    color: black;
+    background: linear-gradient(#f3cbab,#ddceaf);
+    width: 300px;
+    height: 300px;
+    flex-shrink: 1;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+    color: gray;
+}
+
+.project:hover {
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.content {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content > p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
