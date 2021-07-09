@@ -7,8 +7,8 @@ function Navbar() {
             <h1 className={styles.navLogo}><a href='/'>QT Coder</a></h1>
             <ul className={styles.rightSideNav}>
                 <li className={styles.navItem}>
-                    <a href='#experience'>
-                        Experience
+                    <a href='#about'>
+                        About me
                     </a>
                 </li>
                 <li className={styles.navItem}>

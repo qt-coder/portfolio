@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styles from '../styles/Projects.module.css'
 import { motion } from "framer-motion"
 
@@ -28,6 +28,7 @@ const ProjectsList = [
 ]
 
 function Project({title, desc, link}) {
+    
     return (
         <motion.a
             id='projects'

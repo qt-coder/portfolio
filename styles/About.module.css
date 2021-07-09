@@ -13,10 +13,12 @@
 }
 
 .desc {
+    color: gray;
     width: 80%;
 }
 
 .technologies {
+    color: gray;
     list-style-type: none;
 }
 
