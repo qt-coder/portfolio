@@ -3,6 +3,7 @@
 }
 
 .projectsTitle {
+    font-weight: 300;
     font-size: -webkit-calc(2vw + 20px);
 	font-size: -moz-calc(2vw + 20px);
 	font-size: calc(2vw + 20px);

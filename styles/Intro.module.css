@@ -22,8 +22,8 @@
 }
 
 .caption {
+    font-weight: 200;
     text-transform: uppercase;
-    font-weight: bold;
     font-size: 30px;
 }
 
