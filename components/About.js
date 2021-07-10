@@ -10,11 +10,11 @@ function About() {
                 <h1 className={styles.title}>About Me</h1>
                 <p className={styles.desc}>Hi! I'm qt. I'm currently in high school and I code as a hobby.  <br/>Here are a few technologies I work with:</p>
                 <ul className={styles.technologies}>
-                    <li><BiRightArrow /> HTML</li>
-                    <li><BiRightArrow /> CSS</li>
-                    <li><BiRightArrow /> Javascript</li>
-                    <li><BiRightArrow /> React</li>
-                    <li><BiRightArrow /> Next JS</li>
+                    <li><BiRightArrow color='#009BEF'/> HTML</li>
+                    <li><BiRightArrow color='#009BEF'/> CSS</li>
+                    <li><BiRightArrow color='#009BEF'/> Javascript</li>
+                    <li><BiRightArrow color='#009BEF'/> React</li>
+                    <li><BiRightArrow color='#009BEF'/> Next JS</li>
                 </ul>
             </div>
             <div className={styles.rightSide}>

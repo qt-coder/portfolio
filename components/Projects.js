@@ -23,11 +23,11 @@ const item = {
 }
 
 const ProjectsList = [
-    {title: 'QT Drive', desc: 'A file storage system that uses Firebase and React', link: 'https://qtdrive.netlify.app'},
-    {title: 'Cath.exe', desc: 'A Discord bot with a dashboard made in Next JS', link: 'https://cath.gq'},
+    {title: 'QT Drive', desc: 'A file storage system that uses Firebase and React', link: 'https://qtdrive.netlify.app', primary: false},
+    {title: 'Cath.exe', desc: 'A Discord bot with a dashboard made in Next JS', link: 'https://cath.gq', primary: true},
 ]
 
-function Project({title, desc, link}) {
+function Project({title, desc, link, primary}) {
     
     return (
         <motion.a
@@ -37,7 +37,7 @@ function Project({title, desc, link}) {
             variants={item}
             whileHover={{ scale: 0.95, rotate: 1.05 }}
         >
-            <div className={styles.project}>
+            <div className={primary ? styles.primaryProject : styles.secondaryProject}>
                 <div className={styles.content}>
                     <h1>{title}</h1>
                     <p>{desc}</p>
@@ -56,7 +56,7 @@ function Projects() {
             <h1 className={styles.projectsTitle}>Projects I've Worked On</h1>
             <motion.div className={styles.projects} variants={container} initial='hidden' animate='visible'>
                 {ProjectsList.map((project, index) => (
-                    <MotionProject title={project.title} desc={project.desc} link={project.link} key={index}/>
+                    <MotionProject title={project.title} desc={project.desc} link={project.link} key={index} primary={project.primary}/>
                 ))}
             </motion.div>
         </div>

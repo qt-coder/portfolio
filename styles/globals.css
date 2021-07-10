@@ -56,12 +56,13 @@ button {
   font-weight: 700;
   text-align: center;
   padding: 17px 48px;
-  color: #fff;
+  color: #000;
   background-color: #1ED760;
   height: 48px;
 }
 
 button:hover {
-  transform: scale(1.04);
-  background-color: #21e065;
+  color: white;
+  background-color: black;
+  border: white 1px solid;
 }

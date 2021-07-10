@@ -2,24 +2,44 @@ import React from 'react'
 import styles from '../styles/Intro.module.css'
 import {motion} from 'framer-motion'
 
+const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+            delayChildren: 0.4,
+            staggerChildren: 0.3
+        }
+    }
+}
+
+const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+        y: 0,
+        opacity: 1
+    }
+}
+
 function Intro() {
     return (
         <div className={styles.IntroContainer}>
-            <motion.h1 className={styles.title} initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
+            <motion.h1 className={styles.title} initial={{ x: '500px' }}
+                animate={{ x: '0px' }}
                 transition={{
                     type: "spring",
                     stiffness: 260,
                     damping: 20
                 }}>Frontend Dev</motion.h1>
-            <motion.div className={styles.flex} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <motion.div className={styles.flex} variants={container} initial='hidden' animate='visible'>
 
-                <h2 className={styles.caption}>
+                <motion.h2 className={styles.caption} initial={{ x: '500px' }} animate={{ x: '0px' }} variants={item}>
                     QT Coder
-                </h2>
-                <p className={styles.desc}>
+                </motion.h2>
+                <motion.p className={styles.desc} variants={item}>
                     I'm a high school student and I've been coding for a year. I'm always trying to improve myself and get better.
-                </p>
+                </motion.p>
             </motion.div>
         </div>
     )
