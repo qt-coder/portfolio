@@ -45,7 +45,7 @@ function Intro() {
                 </motion.p>
             </motion.div>
             <motion.div className={styles.arrowContainer}>
-                <MotionArrow initial={{y: 0}} animate={{y: 100}} transition={{  }}/>
+                <MotionArrow/>
             </motion.div>
         </div>
     )

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import styles from '../styles/Projects.module.css'
 import { motion } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 
 const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -49,11 +50,14 @@ function Project({title, desc, link, primary}) {
 const MotionProject = motion(Project)
 
 function Projects() {
+
+    const [ref, isVisible] = useInView({ threshold: 0.7 });
+
     return (
         <div className={styles.projectsContainer}>
             <h2 className={styles.subtitle}>Featured Projects</h2>
             <h1 className={styles.projectsTitle}>Projects I've Worked On</h1>
-            <motion.div className={styles.projects} variants={container} initial='hidden' animate='visible'>
+            <motion.div ref={ref} className={styles.projects} variants={container} initial='hidden' animate={isVisible ? "visible" : "hidden"}>
                 {ProjectsList.map((project, index) => (
                     <MotionProject title={project.title} desc={project.desc} link={project.link} key={index} primary={project.primary}/>
                 ))}
