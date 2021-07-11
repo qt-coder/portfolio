@@ -51,7 +51,7 @@ const MotionProject = motion(Project)
 
 function Projects() {
 
-    const [ref, isVisible] = useInView({ threshold: 0.7 });
+    const [ref, isVisible] = useInView({ threshold: 0.1 });
 
     return (
         <div className={styles.projectsContainer}>
