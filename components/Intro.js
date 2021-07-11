@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../styles/Intro.module.css'
 import {motion} from 'framer-motion'
+import { AiOutlineArrowDown } from 'react-icons/ai'
 
 const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -22,6 +23,8 @@ const item = {
     }
 }
 
+const MotionArrow = motion(AiOutlineArrowDown)
+
 function Intro() {
     return (
         <div className={styles.IntroContainer}>
@@ -40,6 +43,9 @@ function Intro() {
                 <motion.p className={styles.desc} variants={item}>
                     I'm a high school student and I've been coding for a year. I'm always trying to improve myself and get better.
                 </motion.p>
+            </motion.div>
+            <motion.div className={styles.arrowContainer}>
+                <MotionArrow initial={{y: 0}} animate={{y: 100}} transition={{  }}/>
             </motion.div>
         </div>
     )

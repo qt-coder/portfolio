@@ -1,0 +1,47 @@
+.subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+    color: gray;
+}
+
+.title {
+    font-weight: 300;
+    font-size: -webkit-calc(2vw + 20px);
+	font-size: -moz-calc(2vw + 20px);
+	font-size: calc(2vw + 20px);
+    margin-bottom: 3vw;
+}
+
+.title:hover {
+    color: rgb(218, 218, 218);
+}
+
+.desc {
+    color: gray;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.desc > a {
+    color: aqua;
+}
+
+.preview {
+    margin-top: 5vw;
+    width: 70%;
+}
+
+@media screen and (max-width: 900px) {
+    .preview {
+        width: 100%;
+    }
+}
+
+.live {
+    margin-top: 30px;
+}
+
+.live > a {
+    color: aqua;
+}

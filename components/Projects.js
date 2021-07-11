@@ -23,8 +23,8 @@ const item = {
 }
 
 const ProjectsList = [
-    {title: 'QT Drive', desc: 'A file storage system that uses Firebase and React', link: 'https://qtdrive.netlify.app', primary: false},
-    {title: 'Cath.exe', desc: 'A Discord bot with a dashboard made in Next JS', link: 'https://cath.gq', primary: true},
+    {title: 'QT Drive', desc: 'A file storage system that uses Firebase and React', link: '/qtdrive', primary: false},
+    {title: 'Cath.exe', desc: 'A Discord bot with a dashboard made in Next JS', link: '/cath', primary: true},
 ]
 
 function Project({title, desc, link, primary}) {
@@ -33,7 +33,6 @@ function Project({title, desc, link, primary}) {
         <motion.a
             id='projects'
             href={link}
-            target='_empty'
             variants={item}
             whileHover={{ scale: 0.95, rotate: 1.05 }}
         >
