@@ -6,10 +6,12 @@
 }
 
 .timelineContainer {
-    margin-top: 20vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
 }
 
 .timelineTitle {
+    font-weight: 300;
     font-size: -webkit-calc(2vw + 20px);
 	font-size: -moz-calc(2vw + 20px);
 	font-size: calc(2vw + 20px);
@@ -22,4 +24,12 @@
   align-items: center;
   justify-content: center;
   padding: 100px 0;
+}
+
+.content > b {
+    color: white;
+}
+
+.content > p {
+    color: white;
 }

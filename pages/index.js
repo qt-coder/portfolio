@@ -12,6 +12,7 @@ export default function Home() {
       <div className='content'>
         <About/>
         <Projects/>
+        <Timeline/>
         <CTA/>
         <Contact/>
       </div>

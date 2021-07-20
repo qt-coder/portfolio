@@ -3,10 +3,11 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import '../styles/globals.css'
 import Head from 'next/head'
+import { ThemeProvider } from '@primer/components'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <ThemeProvider colorMode='day'>
       <Head>
         <title>qt coder</title>
       </Head>
@@ -16,7 +17,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </div>
       <Footer/>
-    </>
+    </ThemeProvider>
   )
 }
 

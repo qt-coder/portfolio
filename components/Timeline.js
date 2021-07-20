@@ -1,4 +1,6 @@
 import React from 'react'
+import {Timeline as Tm, StyledOcticon} from '@primer/components'
+import {FlameIcon} from '@primer/octicons-react'
 import styles from '../styles/Timeline.module.css'
 
 const entries = [
@@ -16,13 +18,36 @@ function Timeline() {
 
     return (
         <div className={styles.timelineContainer}>
-            <h2 className={styles.subtitle}>My current programming timeline</h2>
+            <h2 className={styles.subtitle}>Timeline</h2>
             <h1 className={styles.timelineTitle}>My Journey</h1>
-            <div className={styles.container}>
-                <div className={styles.timeline}>
-                    
-                </div>
-            </div>
+            <Tm>
+                {entries.map((entry, id) => (
+                    <Tm.Item key={id}>
+                        <Tm.Badge>
+                            <StyledOcticon icon={FlameIcon} color='red'/>
+                        </Tm.Badge>
+                        <Tm.Body className={styles.content}>
+                            <b>{entry.title}</b>
+                            <br/>
+                            <b>{entry.date}</b>
+                            <br/>
+                            <p>{entry.desc}</p>
+                        </Tm.Body>
+                    </Tm.Item>
+                ))}
+                <Tm.Item>
+                    <Tm.Badge>
+                        <StyledOcticon icon={FlameIcon} color='blue'/>
+                    </Tm.Badge>
+                    <Tm.Body className={styles.content}>
+                        <b>Now</b>
+                        <br />
+                        <b>{date}</b>
+                        <br />
+                        <p>There you go! That's my current journey, and I'll be making even more progress very soon!</p>
+                    </Tm.Body>
+                </Tm.Item>
+            </Tm>
         </div>
     )
 }
