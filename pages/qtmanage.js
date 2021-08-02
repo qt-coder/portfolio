@@ -22,23 +22,23 @@ const item = {
     }
 }
 
-function GithubStats() {
+function QtManage() {
     return (
         <motion.div variants={container} initial='hidden' animate='visible'>
-            <motion.h2 className={styles.subtitle} variants={item}>An app that displays your Github Stats</motion.h2>
-            <motion.a className={styles.title} href='https://github.com/qt-coder/github-stats' target='_empty' variants={item}>Github Stats</motion.a>
+            <motion.h2 className={styles.subtitle} variants={item}>A landing page</motion.h2>
+            <motion.a className={styles.title} href='https://github.com/qt-coder/manage-landing-page' target='_empty' variants={item}>QT Manage</motion.a>
             <motion.p className={styles.desc} variants={item}>
-                Github Stats is a web app made in <a>React</a>, and uses the <a>Github API</a>.
+                QT Manage is a landing page made in <a>HTML</a>, <a>CSS</a> and vanilla <a>Javascript</a>.
                 <br />
-                It includes the ability to check a user's repositories and their stats, their followers and more.
+                Includes a navbar, hero, features section, testimonials, a call to action and a footer.
                 <br />
                 <div className={styles.live}>
-                    Check it out <a href='https://mygithubstats.netlify.app' target='_empty'>live</a>
+                    Check it out <a href='https://qtmanage.netlify.app' target='_empty'>live</a>
                 </div>
             </motion.p>
-            <motion.img src={'/githubstats.png'} className={styles.preview} variants={item} />
+            <motion.img src={'/qtmanage.png'} className={styles.preview} variants={item} />
         </motion.div>
     )
 }
 
-export default GithubStats
+export default QtManage

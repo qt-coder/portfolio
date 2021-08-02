@@ -24,6 +24,7 @@ const item = {
 }
 
 const ProjectsList = [
+    { title: 'QT Manage', desc: 'A landing page made in vanilla HTML, CSS, JS', link: '/qtmanage', primary: false },
     {title: 'Splitter', desc: 'A website to help users calculate tips made in Next JS', link: '/splitter', primary: true},
     {title: 'QT Drive', desc: 'A file storage system that uses Firebase and React', link: '/qtdrive', primary: false},
     {title: 'Cath.exe', desc: 'A Discord bot with a dashboard made in Next JS', link: '/cath', primary: true},
