@@ -13,8 +13,10 @@ function About() {
                     <li><BiRightArrow color='#009BEF'/> HTML</li>
                     <li><BiRightArrow color='#009BEF'/> CSS</li>
                     <li><BiRightArrow color='#009BEF'/> Javascript</li>
+                    <li><BiRightArrow color='#009BEF'/> Typescript</li>
                     <li><BiRightArrow color='#009BEF'/> React</li>
                     <li><BiRightArrow color='#009BEF'/> Next JS</li>
+                    <li><BiRightArrow color='#009BEF'/> Jest Testing</li>
                 </ul>
             </div>
             <div className={styles.rightSide}>
